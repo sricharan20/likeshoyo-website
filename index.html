@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LikeShoyo</title>
+  <link rel="icon" href="https://emojiapi.dev/api/v1/1f3d0/64.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background: linear-gradient(-45deg, #0d0d0d, #1a1a1a, #222, #0d0d0d);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      color: #f5f5f5;
+      text-align: center;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    header {
+      background-color: #ff6600;
+      padding: 30px;
+      font-size: 32px;
+      font-weight: bold;
+      animation: fadeDown 1.5s ease;
+    }
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #333;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.2s ease forwards;
+      animation-delay: 0.5s;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      box-shadow: 0 0 15px #ff6600aa;
+      transition: all 0.3s ease-in-out;
+    }
+    a.button:hover {
+      background-color: #e65c00;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff6600cc;
+    }
+    footer {
+      padding: 20px;
+      background: #111;
+      font-size: 14px;
+      color: #aaa;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    LikeShoyo 🏐
+  </header>
+
+  <section>
+    <h2>My Dream</h2>
+    <p>I’m not in college. I’m chasing my own path.</p>
+    <p>One day I’ll go to Japan. I’ll become a volleyball player. This is my story.</p>
+  </section>
+
+  <section>
+    <h2>Join My Journey</h2>
+    <p>I promote tools that help others earn online. No experience? Start here:</p>
+    <a class="button" href="https://your-affiliate-link.com" target="_blank">🔗 Join Affiliate Now</a>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <p>DM me on Instagram: <strong>@likeshoyo</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 LikeShoyo | Made with discipline, not excuses.
+  </footer>
+
+</body>
+</html>
