@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LikeShoyo Blog</title>
+  <title>LikeShoyo</title>
   <link rel="icon" href="https://emojiapi.dev/api/v1/1f3d0/64.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <style>
@@ -14,12 +14,38 @@
       background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
       color: white;
       text-align: center;
-      padding: 40px 20px;
+    }
+    .hero {
+      padding: 100px 20px 60px;
+      background: rgba(0, 0, 0, 0.6);
     }
     h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
+      font-size: 32px;
+      animation: fadeIn 2s ease-in;
       color: #ffa500;
+    }
+    .buttons {
+      margin-top: 30px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      box-shadow: 0 0 15px #ff6600aa;
+      transition: all 0.3s ease-in-out;
+    }
+    .buttons a:hover {
+      background-color: #e65c00;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff6600cc;
+    }
+    .blog-section {
+      padding: 40px 20px;
     }
     .blog-card {
       background: rgba(255,255,255,0.05);
@@ -55,35 +81,55 @@
     }
     footer {
       margin-top: 40px;
+      padding: 20px;
       font-size: 14px;
-      color: #aaa;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ccc;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .buttons a { width: 80%; font-size: 14px; }
     }
   </style>
 </head>
 <body>
 
-  <h1>📝 LikeShoyo Blog</h1>
-
-  <div class="blog-card">
-    <h2>How Anime Inspired My Affiliate Journey</h2>
-    <p>I used to feel like a failure, but anime — especially Haikyuu — made me believe I can rise no matter how many times I fall. I discovered affiliate marketing and built this faceless brand, LikeShoyo, to prove I can still shine.</p>
-    <a href="#">Read More</a>
+  <div class="hero">
+    <h1>My life is full of failures<br>but I am not a failure</h1>
+    <div class="buttons">
+      <a href="https://richind.org?referrer_code=RINDVZF2RCVF" target="_blank">Start Affiliate Journey</a>
+      <a href="https://richind.org?referrer_code=RINDVZF2RCVF" target="_blank">My Tools</a>
+      <a href="https://richind.org?referrer_code=RINDVZF2RCVF" target="_blank">Learn to Earn</a>
+    </div>
   </div>
 
-  <div class="blog-card">
-    <h2>Why I Want to Go to Japan 🗾</h2>
-    <p>Since childhood, Japan has been my dream — for its culture, anime, and peaceful life. I want to go not just as a tourist, but to live, learn, and create my story there with LikeShoyo.</p>
-    <a href="#">Read More</a>
-  </div>
+  <div class="blog-section">
+    <h1>📝 LikeShoyo Blog</h1>
+    <div class="blog-card">
+      <h2>How Anime Inspired My Affiliate Journey</h2>
+      <p>I used to feel like a failure, but anime — especially Haikyuu — made me believe I can rise no matter how many times I fall. I discovered affiliate marketing and built this faceless brand, LikeShoyo, to prove I can still shine.</p>
+      <a href="#">Read More</a>
+    </div>
 
-  <div class="blog-card">
-    <h2>From Failure to Fire: Chasing My Volleyball Dream</h2>
-    <p>People laughed when I said I want to be a volleyball player. But I’ve started training, learning, and watching matches daily. I may have failed in school, but I won’t fail my dream. I’m chasing it every single day.</p>
-    <a href="#">Read More</a>
+    <div class="blog-card">
+      <h2>Why I Want to Go to Japan 🗾</h2>
+      <p>Since childhood, Japan has been my dream — for its culture, anime, and peaceful life. I want to go not just as a tourist, but to live, learn, and create my story there with LikeShoyo.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <h2>From Failure to Fire: Chasing My Volleyball Dream</h2>
+      <p>People laughed when I said I want to be a volleyball player. But I’ve started training, learning, and watching matches daily. I may have failed in school, but I won’t fail my dream. I’m chasing it every single day.</p>
+      <a href="#">Read More</a>
+    </div>
   </div>
 
   <footer>
-    &copy; 2025 LikeShoyo | Never give up 🏐🧡
+    &copy; 2025 LikeShoyo | Instagram: @likeshoyo
   </footer>
 
 </body>
